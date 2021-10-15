@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Eryk Warchulski</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=0.3"/>
+
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3.0.1/es5/tex-mml-chtml.js"></script>
+  </head>
+
+  <body>
+    <h1>Wstęp do sztucznej inteligencji: ćwiczenie nr 1</h1>
+    <h3>Prowadzący:</h3>
+    Eryk Warchulski<br>
+    eryk.warchulski@pw.edu.pl<br>
+    WEiTI p. 26<br>
+    konsultacje pon. 18:15-20:00
+    <p>
+    <h2> Zadanie 1. (7p)</h2>
+    Zaimplementuj algorytm gradientu prostego oraz algorytm
+    Newtona. Algorytm Newtona powinien móc działać w dwóch trybach:
+    <ul>
+      <li>ze stałym parametrem kroku</li>
+      <li>z adaptacją parametru kroku przy użyciu metody z nawrotami.</li>
+    </ul>
+    Następnie zbadaj zbieżność obu algorytmów, używając następującej funkcji:  
+    $$f(\textbf{x}) = \sum^{n}_{i = 1}\alpha^{\frac{i - 1}{n - 1}}x^{2}_{i},\;
+    \textbf{x}\in\mathbb{R}^{n}.$$
+    </p>
+    <p>
+    Zbadaj wpływ wartości parametru kroku na zbieżność obu metod. W swoich
+    badaniach rozważ następujące wartości parametru \(\alpha \in \{1, 10,
+    100\}\) oraz dwie wymiarowości \(n \in \{10, 20\}\). Ponadto porównaj czasy
+    działania obu algorytmów.
+    </p>
+    <p> 
+    <strong>Pamiętaj, że przeprowadzone eksperymenty numeryczne powinny dać się
+      odtworzyć</strong>.
+    </p>
+  </body>
+</html>
