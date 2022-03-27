@@ -38,7 +38,7 @@
 </ol>
 <h3 id="zgloszenie-zespolu-i-wybor-tematu">Zgłoszenie zespołu i wybór zadania</h3>
 <hr/>
-<p>Do terminu <code>06.04.2022 23:59</code> zespół zobowiązany jest do wysłania wiadomości e-mail, w której zostaną zawarte następujące informacje:</p>
+<p>Do terminu <code>13.04.2022 23:59</code> zespół zobowiązany jest do wysłania wiadomości e-mail, w której zostaną zawarte następujące informacje:</p>
 <ul>
 <li>imiona, nazwiska oraz numery indeksow osób, tworzących zespoł</li>
 <li>numer tematu.</li>
@@ -50,7 +50,7 @@ należy rozszerzyć o tag <code>[WAE]</code>.</p>
 <p>Brak zgłoszenia zespołu oraz zadnia projektowego do wskazanego powyżej terminu rownoważny jest rezygnacji z wykonywania projektu.</p>
 <h3 id="dokumentacja-wstepna">Dokumentacja wstępna</h3>
 <hr/>
-<p>Do terminu <code>20.04.2022 23:59</code> zespół zobowiązany jest przekazać dokumentację wstępną w postaci pliku <strong>pdf</strong>. Plik dokumentacji należy zatytułować w nastepujący sposób:</p>
+<p>Do terminu <code>27.04.2022 23:59</code> zespół zobowiązany jest przekazać dokumentację wstępną w postaci pliku <strong>pdf</strong>. Plik dokumentacji należy zatytułować w nastepujący sposób:</p>
 <p><code>wae-init-#1.pdf</code></p>
 <p>Przy czym za symbol <code>#1</code> należy podstawić numer zadania projektowego.</p>
 <p>Treść dokumentacji wstępnej powinna składać się z:</p>
@@ -125,17 +125,17 @@ zgodnie<br>z <a class="glink" href="https://google.github.io/styleguide/" target
 <tr class="odd">
 <td style="text-align: center;">Zgłoszenie zespołu i wybór tematu</td>
 <td style="text-align: center;">Mail z numerem projektu i danymi wykonawców</td>
-<td style="text-align: center;">06.04.2022 23:59</td>
+<td style="text-align: center;">13.04.2022 23:59</td>
 </tr>
 <tr class="even">
 <td style="text-align: center;">Dokumentacja wstępna</strong></td>
 <td style="text-align: center;">Mail z raportem wstępnym</strong></td>
-<td style="text-align: center;">20.04.2022 23:59</td>
+<td style="text-align: center;">27.04.2022 23:59</td>
 </tr>
 <tr class="odd">
 <td style="text-align: center;"><strong>Dokumentacja końcowa</strong></td>
 <td style="text-align: center;"><strong>Mail z kodem, raportem i danymi</strong></td>
-<td style="text-align: center;">15.06.2022 23:59</td>
+<td style="text-align: center;">18.06.2022 23:59</td>
 </tr>
 <tr class="even">
 <td style="text-align: center;">Prezentacja projektu</td>
@@ -148,7 +148,7 @@ zgodnie<br>z <a class="glink" href="https://google.github.io/styleguide/" target
 <hr/>
 
 <p>
-Poniżej znajduje się 25 zadań projektowych.
+Poniżej znajduje się 20 zadań projektowych.
 Należy wybrać jedno z nich i zgłosić wybrany temat przy pomocy wiadomości e-mail.
 </p>
 <p>
@@ -164,7 +164,130 @@ Jeśli realizują Państwo projekt uczelniany lub Państwa praca dyplomowa dotyc
 poruszanych na WAE, to dopuszcza się możliwość zgłoszenia własnego tematu projektowego. 
 </p>
 
-<b>TBA 22.03.2022 23:59</b>
+
+<h3>Zadanie 1.</h3>
+<p>Zbadaj wpływ zastosowania różnych generatorów liczb losowych na działanie wybranego algorytmu ewolucyjnego. W swoim badaniu uwzględnij również generatory z klasy generatorów quasi-losowych.
+Wykorzystaj wybrane funkcje testowe.
+</p>
+
+<h3>Zadanie 2.</h3>
+<p>Zbadaj działanie dowolnego wariantu ewolucji różnicowej oraz dowolnej strategii ewolucyjnej w warunkach niepewności. W tym celu opracuj zestaw funkcji testowych, które będą zawierały co najmniej dwa różne źródła niepewności.</p>
+
+<h3>Zadanie 3.</h3>
+<p>W wybranym przez siebie wariancie ewolucji różnicowej opracuj mechanizm,
+który zwiększałby róznorodność populacji poprzez zastępowanie osobników z
+najniższym przystosowaniem. Rozważ różne podejścia generowania nowych osobników w populacji.</p>
+<p>Zmodyfikowany algorytm porównaj z klasyczną wersją, używając benchmarku BBOB
+z<br/> frameworku <code>coco</code>.</p>
+
+<h3>Zadanie 4.</h3>
+<p>Porównaj działanie algorytmu MO-CMA-ES (Multi-Objective Covariance Matrix
+Adaptation Evolution Strategy) z algorytmem EGO (Efficient Global
+Optimization). W tym celu skorzystaj z benchmarku BBOB-BIOBJ z frameworku <code>coco</code>.</p>
+
+<h3>Zadanie 5.</h3>
+<p>
+Kontrola przystosowania punktu środkowego populacji jest sposobem na poprawienie jakości działania algorytmów ewolucyjnych. Na wybranym przez siebie algorytmie ewolucyjnym zbadaj wpływ sposobu zdefiniowania punktu środkowego na działanie tego algorytmu.</p>
+<p>Poza statystykami jak średnia arytmetyczna lub mediana zbadaj różne warianty średniej ważonej oraz statystyki odporne. Wykorzystaj wybrane funkcje testowe.</p>
+
+<h3>Zadanie 6.</h3>
+<p>Rozszerz algorytm MA-ES o heurystykę IPOP i zbadaj działanie algorytmu.</p>
+<p>Porównaj zmodyfikowany algorytm z algorytmem CMA-ES. W tym celu
+skorzystaj z benchmarku BBOB z frameworku <code>coco</code>.</p>
+
+<h3>Zadanie 7.</h3>
+<p>Na wybranym algorytmie ewolucyjnym porównaj działanie dwóch technik
+zwiększania rożnorodności w populacji: metodę <i>clearingu</i> oraz
+<i>crowdingu</i>. W tym celu wykorzystaj wybrane przez siebie funkcje
+testowe.</p>
+
+<h3>Zadanie 8.</h3>
+<p>W algorytmie CMA-ES wektor <span class="math
+  inline"><em>p</em><sub><em>σ</em></sub></span>, reprezentujący ścieżkę
+ewolucyjną, standardowo inicjalizowany jest wektorem zerowym. Zmodyfikuj
+algorytm tak, aby wektor ten był inicjalizowany wektorem losowym.</p>
+<p>Zbadaj działanie wersji standardowej algorytmu oraz wersji zmodyfikowanej,
+używając wybranych funkcji testowych. W badaniu wykorzystaj co najmniej
+dwa róże generatory liczb losowych.</p>
+
+<h3>Zadanie 9.</h3>
+<p>Zaprojektuj algorytm ewolucyjny i zbadaj jego działanie w jednym z zadań
+zdefiniowanych w ramach środowiska OpenAI poświęconym kontroli.</p>
+<p>Specyfikacja zadań znajduje się pod poniższym linkiem:</p>
+<p><a href="https://gym.openai.com/envs/" target=_blank>
+gym.openai.com/envs/#classic_control
+</a>
+</p>
+<p>Porównaj wyniki swojego rozwiązania z dwoma wybranymi rozwiązaniami, które
+bazują na<br/> innych podejściach.</p>
+
+<h3>Zadanie 10.</h3>
+<p>
+Opracuj i przeprowadź eksperyment, w którym porównasz dowolny wariant ewolucji różnicowej
+z dowolnym wariantem strategii ewolucyjnej w ramach zadania uczenia sieci neuronowej. Ponadto
+porównaj działanie metod ewolucyjnych z wybraną metodą gradientową
+</p>
+
+<h3>Zadanie 11.</h3>
+
+<p>Zmodyfikuj operator selekcji w algorytmie CMA-ES tak, aby działał zgodnie z
+mechanizmem wymarcia (ang. extinction). Porównaj działanie zmodyfikowanej i
+klasycznej wersji algorytmu, używając wybranych funkcji testowych.
+</p>
+
+<h3 id="zadanie-12.">Zadanie 12.</h3>
+<p>Zaimplementuj algorytm DES w języku <strong>Rust</strong>.</p>
+<p>Zbadaj przebieg zbieżności algorytmu na wybranych funkcjach testowych oraz porównaj czas działania względem implementacji algorytmu w języku <strong>R</strong>.</p>
+
+
+<h3 id="zadanie-13.">Zadanie 13.</h3>
+<p>W celu redukcji liczby ewaluacji funkcji celu algorytmy ewolucyjne rozszerza się o model zastępczy (ang. <strong>surrogate</strong>). Rozszerz algorytm DES o model zastępczy i porównaj jego działanie z klasyczną wersją algorytmu. W tym celu użyj benchmarku <code>BBOB</code> z frameworku <code>coco</code>.</p>
+
+
+<h3 id="zadanie-14.">Zadanie 14.</h3>
+<p>Rozszerz algorytm MA-ES o heurystykę IPOP i zbadaj działanie algorytmu.</p>
+<p>Porównaj zmodyfikowany algorytm z algorytmem CMA-ES. W tym celu skorzystaj z benchmarku <code>BBOB</code> z frameworku <code>coco</code>.</p>
+
+
+<h3 id="zadanie-15.">Zadanie 15.</h3>
+<p>Dokonaj hybrydazacji algorytmu NL-SHADE-RSP oraz DES.</p>
+<p>Porównaj działanie algorytmu z klasyczną wersją NL-SHADE oraz DES. Użyj w tym
+celu benchmarku <code>CEC 2022</code>.
+
+<h3 id="zadanie-16.">Zadanie 16.</h3>
+<p>Zmodyfikuj algorytm ewolucji różnicowej w wariancie <code>rand/1/bin</code> tak, aby zasięg mutacji <span class="math inline"><em>F</em></span> był strojony zgodnie z metodą MSR (ang. <strong>Median Success Rule</strong>) oraz PSR (ang. <strong>Population Success Rule</strong>).</p>
+<p>Zbadaj działanie zmodyfikowanych wersji algorytmu, używając benchmarku CEC 2017, dla wymiarowości <span class="math inline"><em>D</em> ∈ {10, 30}</span>.</p>
+
+<h3>Zadanie 17.</h3>
+<p>
+Zbadaj wpływ różnych metod uwzględniania ograniczeń w algorytmie DES. Warianty
+algorytmów porównaj, używając benchmarku <code>BBOB</code> z frameworku <code>coco</code>.
+</p>
+
+
+<h3 id="zadanie-18.">Zadanie 18.</h3>
+<p>Zmodyfikuj algorytm ewolucji różnicowej w wariancie <code>rand/1/bin</code> tak, aby zasięg mutacji <span class="math inline"><em>F</em></span> był strojony zgodnie z metodą MSR (ang. <strong>Median Success Rule</strong>) oraz TPA (ang. <strong>Two Point Adaptation</strong>).</p>
+
+
+<h3 id="zadanie-19.">Zadanie 19.</h3>
+<p>Algorytmy ewolucyjne często narażone są na przedwczesną zbieżność do optimum lokalnego. W celu uniknięcia takiego stanu stosuje się różne heurystyki, które pozwalają zachować odpowiedni poziom różnorodności populacji w trakcie fazy eksploracji. Jedyną z takich heurystyk jest DG (ang. <strong>Diverity-Guided</strong>).</p>
+<p>Rozszerz wybrany przez siebie wariant ewolucji różnicowej o heurystykę DG oraz porównaj działanie zmodyfikowanego algorytmu z jego klasyczną wersją. Użyj w tym celu benchmarku <code>BBOB</code> z frameworku <code>coco</code>.</p>
+
+<h3>Zadanie 20.</h3>
+<p>Dysponujesz zbiorem zadań $T$, wymaganym pierszeństwem $p:\;T\times
+T\rightarrow N$ oraz czasem wykonania każdego zadania 
+$l:\;T\rightarrow N$.</p>
+<p>Twoim zadaniem jest opracowanie metody podziału
+zadań między $M$ grupy pracowników tak, aby zadania, na których określone
+jest
+pierszeństwo wykonania, przydzielone dwóm rożnym grupom były uporządkowane
+według zasady: od wcześniejszego do późniejszego. Do rozwiązania zadania
+wykrozystaj znane Ci algorytmy ewolucyjne.</p>
+
+<h3>Zadanie 21.</h3>
+
+<p><i>Temat własny.</i></p>
+
 
 </body>
 </html>
