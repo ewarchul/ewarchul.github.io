@@ -1,3 +1,7 @@
+/*  
+ * css source: https://github.com/athas/sigkill.dk/blob/master/css/default.css
+ */
+
 :root {
     --bg: black;
     --prebg: black;
@@ -177,7 +181,9 @@ pre > code {
 a.button {
   background-color: var(--prebg);
   color: var(--button);
-  float: right;
+  position: fixed;
+  top:0;
+  left: 0;
   font-size: 2em;
 }
 
@@ -185,7 +191,40 @@ div.content {
   margin-top: 200px;
 }
 
+div.content-publications {
+  margin-top: 100px;
+}
+
 .box {
     display: none;
     width: 100%;
+}
+
+small.tiny {
+ font-size: 10px
+}
+
+.rightAlignedText {
+    right: 0;
+    margin-top: -100px;
+    position: absolute;
+    text-align: left;
+    padding: 10px;
+    top: 50%;
+    width: 50%;
+}
+
+.face-image {
+    max-height: 50%;
+    max-width: 50%;
+    height: auto;
+    width: auto;
+    border-radius:50%;
+    margin-top: 10%;
+    margin-right: 55%;
+}
+
+.tabs {
+    position: absolute;
+    right: 0;
 }
