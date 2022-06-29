@@ -5,7 +5,7 @@
 :root {
     --bg: black;
     --prebg: black;
-    --text: #ffb000;
+    --text: white;
     --headertext: black;
     --button: #990099
 }
@@ -40,6 +40,32 @@ h1 {
 
 h1::before {
     content: "# ";
+}
+
+
+.typewriter h1 {
+  overflow: hidden;
+  font-family: Hack, monospace;
+  border-right: .15em solid transparent; 
+  left: 0;
+  letter-spacing: .15em; 
+  animation: typing 6.5s steps(90, end), blink-caret .9s step-end alternate; 
+  white-space: nowrap; 
+}
+
+.typewriter h1::before {
+    content: "> ";
+    color: #a4f644;
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  20% { border-color: #a4f644; }
 }
 
 h2 {
