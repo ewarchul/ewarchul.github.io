@@ -254,3 +254,14 @@ small.tiny {
     position: absolute;
     right: 0;
 }
+
+hr {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(
+        to right,
+        rgba(55, 55, 55, 55),
+        rgba(55, 55, 55, 55),
+        rgba(55, 55, 55, 55)
+    );
+}
