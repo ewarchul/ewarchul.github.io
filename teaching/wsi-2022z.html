@@ -165,19 +165,20 @@ wyższej niż 0 z danego ćwiczenia laboratoryjnego jest:
 </tbody>
 </table>
 <h2 id="zadania">Zadania laboratoryjne</h2>
-<h3> Zadanie 1.</h3>
+<h3>Zadanie 1.</h3>
+<p>
     Zaimplementuj algorytm gradientu prostego.
     Następnie zbadaj zbieżność algorytmu, używając następującej funkcji:  
     $$q(\textbf{x}) = \sum^{n}_{i = 1}\alpha^{\frac{i - 1}{n - 1}}x^{2}_{i},\;
     \textbf{x}\in [-100, 100]^{n} \subset \mathbb{R}^{n}, n = 10.$$
-    </p>
-    <p>
+</p>
+<p>
       Zbadaj wpływ wartości parametru kroku na zbieżność (wykres par <\(t,
       q(x^{t})\)>, gdzie t to krok/numer iteracji) metody oraz czas jej
       działania. W swoich badaniach rozważ następujące wartości parametru
       \(\alpha \in \{1, 10, 100\}\).
-    </p>
-    <p> 
+</p>
+<p> 
       Do wyliczenia gradientu funkcji możesz skorzystać z pakietu
       <code>autograd</code>. Pamiętaj, że implementacja solwera powinna być w
       stanie (sub)optymalizować każdą zadaną funkcję celu. Z tego względu funkcja
@@ -187,8 +188,25 @@ wyższej niż 0 z danego ćwiczenia laboratoryjnego jest:
                    ^-------------- funkcja celu
                       ^----------- punkt startowy
                           ^------- pozostałe argumenty, np. parametry metody.
-      <pre><code>
-    </p>
+      </pre></code>
+</p>
+
+<h3>Zadanie 2.</h3>
+<p>
+  Zaprojektuj i zaimplementuj algorytm ewolucyjny. Następnie zbadaj jego
+  zbieżność na funkcjach <code>F1</code> oraz <code>F9</code> z benchmarku 
+  <a href="https://github.com/tilleyd/cec2017-py">CEC2017</a>
+  dla wymiarowości <code>n = 10</code>. Interfejs Twojego algorytmu powinien
+  być taki jak w zadaniu poprzednim. Pamiętaj o tym, że prezentowane wyniki
+  powinny być uśrednione.
+</p> 
+
+<p>
+  Ponadto porównaj zbieżność algorytmu ewolucyjnego na wskazanych funkcjach z
+  własną implementacją algorytmu gradientu prostego.
+</p>
+
+
 
 </body>
 </html>
