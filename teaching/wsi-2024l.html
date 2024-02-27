@@ -165,7 +165,30 @@ pytania dotyczące raportu.
 </table>
 <h2 id="zadania">Zadania laboratoryjne</h2>
 <h3>Zadanie 1.</h3>
-  <p> TBA 27.02.2024 12:15 </p>
+<p>
+    Zaimplementuj algorytm gradientu prostego.
+    Następnie zbadaj zbieżność algorytmu, używając następującej funkcji:  
+    $$q(\textbf{x}) = \sum^{n}_{i = 1}\alpha^{\frac{i - 1}{n - 1}}x^{2}_{i},\;
+    \textbf{x}\in [-100, 100]^{n} \subset \mathbb{R}^{n}, n = 10.$$
+</p>
+<p>
+      Zbadaj wpływ wartości parametru kroku na zbieżność (wykres par (\(t,
+      q(x_{t})\)), gdzie t to krok/numer iteracji) metody oraz czas jej
+      działania. W swoich badaniach rozważ następujące wartości parametru
+      \(\alpha \in \{1, 10, 100\}\).
+</p>
+<p> 
+      Do wyliczenia gradientu funkcji możesz skorzystać z pakietu
+      <code>autograd</code>. Pamiętaj, że implementacja solwera powinna być w
+      stanie zoptymalizowac każdą zadaną funkcję celu oraz posiadac co najmniej dwa warunki stopu.
+      Sugerowana sygnatura funkcji:
+      <pre><code>
+       def solver(f, x0, ...) -> result:
+                   ^-------------- funkcja celu
+                      ^----------- punkt startowy
+                          ^------- pozostałe argumenty, np. parametry metody.
+      </pre></code>
+</p>
 
 </body>
 </html>
