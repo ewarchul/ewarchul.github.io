@@ -77,6 +77,12 @@ wsi-{numer indeksu}-{numer ćwiczenia}.zip
 </code></pre>
 </p>
 
+<p>
+Ponadto w wiadomości e-mail należy dostarczyć repozytorium git z kodem źródłowym oraz historią zmian. 
+W tym celu można wykorzystać <a href="https://gitlab-stud.elka.pw.edu.pl/">wydziałowego GitLaba</a>
+lub dowolny publicznie dostępny serwer.
+</p>
+
 <p style="text-align:center">
 <strong>Uwaga!</strong><br>
 </p>
@@ -166,8 +172,33 @@ pytania dotyczące raportu.
 <h2 id="zadania">Zadania laboratoryjne</h2>
 <h3>Zadanie 1.</h3>
   <p>
-    TBA 10.10.2024 8:15
-  </p>
+    Zaimplementuj algorytm gradientu prostego.
+    Następnie zbadaj zbieżność algorytmu, używając następujących funkcji:
+    <ul>
+      <li>funkcji kwadratowej</li>
+      <li>funkcji F3 z benchmarku <a href="https://github.com/tilleyd/cec2017-py">CEC2017</a></li>
+      <li>funkcji F12 z benchmarku CEC2017.</li>
+    </ul>
+    Jako dziedzinę funkcji celu przyjmij zbiór $$[-100, 100]^{n} \subset \mathbb{R}^{n}, n = 10$$.
+</p>
+<p>
+      Zbadaj wpływ wartości parametru kroku na zbieżność (wykres par (\(t,
+      q(x_{t})\)), gdzie t to krok/numer iteracji) metody oraz czas jej
+      działania. W swoich badaniach rozważ następujące wartości parametru
+      \(\alpha \in \{1, 10, 100\}\).
+</p>
+<p> 
+      Do wyliczenia gradientu funkcji możesz skorzystać z pakietu
+      <code>autograd</code>. Pamiętaj, że implementacja solwera powinna być w
+      stanie zoptymalizowac każdą zadaną funkcję celu oraz posiadac co najmniej dwa warunki stopu.
+      Sugerowana sygnatura funkcji:
+      <pre><code>
+       def solver(f, x0, ...) -> result:
+                   ^-------------- funkcja celu
+                      ^----------- punkt startowy
+                          ^------- pozostałe argumenty, np. parametry metody.
+      </pre></code>
+</p>
 </body>
 </html>
 
