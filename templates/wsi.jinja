@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <link rel="stylesheet" href="../css/style.css">
+  <meta charset="UTF-8">
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3.0.1/es5/tex-mml-chtml.js"></script>
+  <title>WSI {{ semsester_tag }}</title>
+</head>
+<body>
+<div class="tabs" style="">
+        <a href="../index.html">Home</a>
+        <a href="index.html">Teaching</a>
+        <a href="../contact.html">Contact</a>
+</div>
+<h1><a
+    href="https://usosweb.usos.pw.edu.pl/kontroler.php?_action=katalog2/przedmioty/pokazPrzedmiot&kod=103A-INxxx-ISP-WSI"
+    target=_blank>Wstęp do sztucznej inteligencji [{{semester_tag}}]</a></h1>
+<ol type="1">
+<li><a href="#zasady">Informacje o laboratorium</a>
+<ul>
+<li><a href="#zasady-ogolne">Zasady ogólne</a></li>
+<li><a href="#dokumentacja">Dokumentacja oraz kod źródłowy</a></li>
+<li><a href="#ocena">Ocena oraz jej kryteria</a></li>
+<li><a href="#terminarz">Terminarz</a></li>
+</ul></li>
+<li><a href="#zadania">Zadania laboratoryjne</a></li>
+</ol>
+<h2 id="zasady">Informacje o laboratorium</h2>
+<h3 id="zasady-ogolne">Zasady ogólne</h3>
+<hr/>
+<p>
+Laboratorium odbywa się w każdy czwartek między godziną {{ lab_start_time }} a {{ lab_end_time }} w sali
+laboratoryjnej {{ lab_room }} (piwnica) na wydziale EiTI.
+Do sali laboratoryjnej zabrania się wnoszenia okrycia
+wierzchniego, tj. kurtek, płaszczy, etc.
+</p>
+<p>
+Sugerowanym językiem implementacji rozwiązań zadań laboratoryjnych jest język
+    <a class="glink" href="https://www.python.org/">Python</a> (sugerowana wersja: {{ sugested_python_ver }}). Dopuszczalne jest użycie innego języka programowania (z wyłączeniem <a
+  class="glink"
+  href="https://en.wikipedia.org/wiki/Esoteric_programming_language"
+target=_blank>języków ezoterycznych</a>).
+
+<b>Wymagane</b> jest, aby kod każdego ćwiczenia laboratoryjnego był sformatowany zgodnie z <a class="glink"
+      href="https://github.com/psf/black" target=_blank> The Black Code Style: Current style.</a></p>
+<p>
+Po odebraniu tematu ćwiczenia laboratoryjnego nie ma obowiązku fizycznej
+obecności w laboratorium. Ćwiczenia mogą być realizowane na komputerach
+osobistych. Należy jednak zadbać o to, aby przygotowane przez Państwa programy
+dały się uruchomić pod systemami operacyjnymi z rodziny GNU/Linux.
+</p>
+<p>
+Ćwiczenia laboratoryjne wykonywane są pojedynczo z wyjątkiem ćwiczenia poświęconemu 
+sieciom neuronowym, które wykonywane jest w parach.
+</p>
+<h3 id="dokumentacja">Dokumentacja oraz kod źródłowy</h3>
+<p>Rozwiązaniem każdego ćwiczenia laboratoryjnego powinna być dokumentacja oraz
+kod źródłowy zaimplementowanych algorytmów.</p>
+<p>Dokumentacja powinna składać się z sekcji, w których zostaną zawarte
+następujące informacje:
+<ul>
+  <li>opis implementowanych algorytmów</li>
+  <li>opis planowanych eksperymentów numerycznych</li>
+  <li>opis uzyskanych wyników</li>
+  <li>wnioski z przeprowadzonych badań.</li>
+</ul>
+</p>
+
+<p>
+Rozwiązanie każdego ćwiczenia należy wysłać drogą mailową w formie archiwum
+<code>zip,</code> które powinno zawierać plik <code>pdf</code> dokumentacji
+oraz pliki źródłowe programu. Plik archiwum należy nazwać zgodnie według
+poniższego wzoru:
+<pre><code>
+wsi-{numer indeksu}-{numer ćwiczenia}.zip
+</code></pre>
+</p>
+
+<p>
+Ponadto w wiadomości e-mail należy dostarczyć repozytorium git z kodem źródłowym oraz historią zmian. 
+W tym celu można wykorzystać <a href="https://gitlab-stud.elka.pw.edu.pl/">wydziałowego GitLaba</a>
+lub dowolny publicznie dostępny serwer.
+</p>
+
+<p style="text-align:center">
+<strong>Uwaga!</strong><br>
+</p>
+<p>
+Dokumentacja nie powinna przekraczać 5 stron A4. Domyślnym językiem, w którym
+dokumentacja powinna być napisana, jest język polski -- dopuszcza się także, aby dokumentacja była
+napisana w języku angielskim.
+</p>
+
+<h3 id="ocena">Ocena oraz jej kryteria</h3>
+<p>Rozwiązanie zadania laboratoryjnego ocenianie jest w skali 0-7 punktów lub
+0-8 punktów (ćwiczenie dotyczące sieci neuronowych). Na ocenę składają się:</p>
+<ul>
+<li>poprawność implementacji algorytmów (20%)</li>
+<li>poprawność przeprowadzonych eksperymentów numerycznych (20%)</li>
+<li>powtarzalność eksperymentów (10%)</li>
+<li>analiza i dyskusja wyników (45%)</li>
+<li>poprawność językowa tekstu sprawozdania (5%).</li>
+</ul>
+<p>
+W celu uzyskania oceny należy zaprezentować działanie zaimplementowanego
+algorytmu przed prowadzącym w trakcie laboratorium oraz odpowiedzieć na jego 
+pytania dotyczące raportu.
+</p>
+<p>
+    Opóźnienie w dostarczeniu rozwiązania skutkuje naliczaniemn kary w następujący sposób:
+    $$ O_k = max\{O_p(1 - 10\%n),\; 0\} $$
+
+    gdzie \(n\) odpowiada liczbie dni opóźnienia, a \(O_k\) i \(O_p\) odpowiednio ocenie końcowej i proponowanej.
+</p>
+<h3 id="terminarz">Terminarz</h3>
+<table>
+<thead>
+<tr class="header">
+<th>Temat</th>
+<th>Start</th>
+<th>Punktacja</th>
+</tr>
+</thead>
+<tbody>
+<tr class="even">
+<td style="text-align: center;">Przeszukiwanie przestrzeni</td>
+<td style="text-align: center;">{{lab_1_start_date}}</td>
+<td style="text-align: center;">0-7</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">Algorytmy ewolucyjne i genetyczne</td>
+<td style="text-align: center;">{{lab_2_start_date}}</td>
+<td style="text-align: center;">0-7</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">Dwuosobowe gry deterministyczne</td>
+<td style="text-align: center;">{{lab_3_start_date}}</td>
+<td style="text-align: center;">0-7</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">Regresja i klasyfikacja</td>
+<td style="text-align: center;">{{lab_4_start_date}}</td>
+<td style="text-align: center;">0-7</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">Sztuczne sieci neuronowe</td>
+<td style="text-align: center;">{{lab_5_start_date}}</td>
+<td style="text-align: center;">0-8</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">Uczenie się ze wzmocnieniem</td>
+<td style="text-align: center;">{{lab_6_start_date}}</td>
+<td style="text-align: center;">0-7</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">Modele bayesowskie</td>
+<td style="text-align: center;">{{lab_7_start_date}}</td>
+<td style="text-align: center;">0-7</td>
+</tr>
+</tbody>
+</table>
+<h2 id="zadania">Zadania laboratoryjne</h2>
+<h3>Zadanie 1.</h3>
+  <p>
+    <b>TBA {{ lab_1_start_date }}</b>
+  </p>
+<h3>Zadanie 2.</h3>
+  <p>
+    <b>TBA {{ lab_2_start_date }}</b>
+  </p>
+<h3>Zadanie 3.</h3>
+  <p>
+    <b>TBA {{ lab_3_start_date }}</b>
+  </p>
+<h3>Zadanie 4.</h3>
+  <p>
+    <b>TBA {{ lab_4_start_date }}</b>
+  </p>
+<h3>Zadanie 5.</h3>
+  <p>
+    <b>TBA {{ lab_5_start_date }}</b>
+  </p>
+<h3>Zadanie 6.</h3>
+  <p>
+    <b>TBA {{ lab_6_start_date }}</b>
+  </p>
+<h3>Zadanie 7.</h3>
+  <p>
+    <b>TBA {{ lab_7_start_date }}</b>
+  </p>
+</body>
+</html>
+

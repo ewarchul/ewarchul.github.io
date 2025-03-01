@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
   <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3.0.1/es5/tex-mml-chtml.js"></script>
-  <title>WSI 2024Z</title>
+  <title>WSI </title>
 </head>
 <body>
 <div class="tabs" style="">
@@ -13,9 +13,9 @@
         <a href="index.html">Teaching</a>
         <a href="../contact.html">Contact</a>
 </div>
-<h1 id="wsi-24Z"><a
+<h1><a
     href="https://usosweb.usos.pw.edu.pl/kontroler.php?_action=katalog2/przedmioty/pokazPrzedmiot&kod=103A-INxxx-ISP-WSI"
-    target=_blank>Wprowadzenie do sztucznej inteligencji [2024Z]</a></h1>
+    target=_blank>Wstęp do sztucznej inteligencji [2025L]</a></h1>
 <ol type="1">
 <li><a href="#zasady">Informacje o laboratorium</a>
 <ul>
@@ -30,14 +30,14 @@
 <h3 id="zasady-ogolne">Zasady ogólne</h3>
 <hr/>
 <p>
-Laboratorium odbywa się w każdy czwartek między godziną 08:15 a 10:00 w sali
+Laboratorium odbywa się w każdy czwartek między godziną 12:15 a 14:00 w sali
 laboratoryjnej 011 (piwnica) na wydziale EiTI.
 Do sali laboratoryjnej zabrania się wnoszenia okrycia
 wierzchniego, tj. kurtek, płaszczy, etc.
 </p>
 <p>
 Sugerowanym językiem implementacji rozwiązań zadań laboratoryjnych jest język
-    <a class="glink" href="https://www.python.org/">Python</a> (sugerowana wersja: 3.12). Dopuszczalne jest użycie innego języka programowania (z wyłączeniem <a
+    <a class="glink" href="https://www.python.org/">Python</a> (sugerowana wersja: ). Dopuszczalne jest użycie innego języka programowania (z wyłączeniem <a
   class="glink"
   href="https://en.wikipedia.org/wiki/Esoteric_programming_language"
 target=_blank>języków ezoterycznych</a>).
@@ -112,7 +112,6 @@ pytania dotyczące raportu.
     $$ O_k = max\{O_p(1 - 10\%n),\; 0\} $$
 
     gdzie \(n\) odpowiada liczbie dni opóźnienia, a \(O_k\) i \(O_p\) odpowiednio ocenie końcowej i proponowanej.
-
 </p>
 <h3 id="terminarz">Terminarz</h3>
 <table>
@@ -120,51 +119,43 @@ pytania dotyczące raportu.
 <tr class="header">
 <th>Temat</th>
 <th>Start</th>
-<th>Oddanie</th>
 <th>Punktacja</th>
 </tr>
 </thead>
 <tbody>
 <tr class="even">
 <td style="text-align: center;">Przeszukiwanie przestrzeni</td>
-<td style="text-align: center;">10.10.2024</td>
-<td style="text-align: center;">24.10.2024</td>
+<td style="text-align: center;">2025-03-04</td>
 <td style="text-align: center;">0-7</td>
 </tr>
 <tr class="even">
 <td style="text-align: center;">Algorytmy ewolucyjne i genetyczne</td>
-<td style="text-align: center;">24.10.2024</td>
-<td style="text-align: center;">07.11.2024</td>
+<td style="text-align: center;">2025-03-18</td>
 <td style="text-align: center;">0-7</td>
 </tr>
 <tr class="even">
 <td style="text-align: center;">Dwuosobowe gry deterministyczne</td>
-<td style="text-align: center;">07.11.2024</td>
-<td style="text-align: center;">28.11.2024</td>
+<td style="text-align: center;">2025-04-01</td>
 <td style="text-align: center;">0-7</td>
 </tr>
 <tr class="even">
 <td style="text-align: center;">Regresja i klasyfikacja</td>
-<td style="text-align: center;">28.11.2024</td>
-<td style="text-align: center;">12.12.2024</td>
+<td style="text-align: center;">2025-04-15</td>
 <td style="text-align: center;">0-7</td>
 </tr>
 <tr class="even">
 <td style="text-align: center;">Sztuczne sieci neuronowe</td>
-<td style="text-align: center;">12.12.2024</td>
-<td style="text-align: center;">02.01.2025</td>
+<td style="text-align: center;">2025-05-06</td>
 <td style="text-align: center;">0-8</td>
 </tr>
 <tr class="even">
 <td style="text-align: center;">Uczenie się ze wzmocnieniem</td>
-<td style="text-align: center;">02.01.2025</td>
-<td style="text-align: center;">16.01.2025</td>
+<td style="text-align: center;">2025-05-20</td>
 <td style="text-align: center;">0-7</td>
 </tr>
 <tr class="even">
 <td style="text-align: center;">Modele bayesowskie</td>
-<td style="text-align: center;">16.01.2025</td>
-<td style="text-align: center;">23.01.2025</td>
+<td style="text-align: center;">2025-06-03</td>
 <td style="text-align: center;">0-7</td>
 </tr>
 </tbody>
@@ -172,112 +163,31 @@ pytania dotyczące raportu.
 <h2 id="zadania">Zadania laboratoryjne</h2>
 <h3>Zadanie 1.</h3>
   <p>
-    Zaimplementuj algorytm gradientu prostego.
-    Następnie zbadaj zbieżność algorytmu, używając następujących funkcji:
-    <ul>
-      <li>funkcji kwadratowej</li>
-      <li>funkcji F3 z benchmarku <a href="https://github.com/tilleyd/cec2017-py">CEC2017</a></li>
-      <li>funkcji F12 z benchmarku CEC2017.</li>
-    </ul>
-    Jako dziedzinę funkcji celu przyjmij zbiór $$[-100, 100]^{n} \subset \mathbb{R}^{n}, n = 10.$$
-</p>
-<p>
-      Zbadaj wpływ wartości parametru kroku na zbieżność (wykres par (\(t,
-      q(x_{t})\)), gdzie t to krok/numer iteracji) metody oraz czas jej
-      działania. W swoich badaniach rozważ następujące wartości parametru
-      \(\alpha \in \{1, 10, 100\}\).
-</p>
-<p> 
-      Do wyliczenia gradientu funkcji możesz skorzystać z pakietu
-      <code>autograd</code>. Pamiętaj, że implementacja solwera powinna być w
-      stanie zoptymalizowac każdą zadaną funkcję celu oraz posiadac co najmniej dwa warunki stopu.
-      Sugerowana sygnatura funkcji:
-      <pre><code>
-       def solver(f, x0, ...) -> result:
-                   ^-------------- funkcja celu
-                      ^----------- punkt startowy
-                          ^------- pozostałe argumenty, np. parametry metody.
-      </pre></code>
-</p>
-
+    <b>TBA 2025-03-04</b>
+  </p>
 <h3>Zadanie 2.</h3>
   <p>
-    Zaimplementuj algorytm ewolucyjny (1+1)-ES z adaptacją zasięgu mutacji zgodnie z regułą 1/5-sukcesu. Zbadaj zaimplementowany
-    solver na nastepujących funkcjach celu: kwadratowej, F3/CEC2017 oraz F7/CEC2017. W ramach badania sprawdź jaki wpływ na
-    działanie algorytmu mają parametry sterujące regułą adaptacji zasięgu mutacji oraz początkowa wartość zasięgu mutacji. Porównaj
-    działanie algorytmu z własną lub dostarczaną w ramach pakietów numerycznych implementacją algorytmu SGD. Pamiętaj, aby w
-    badaniach skompensować stochastyczność solwera ewolucyjnego. Rozważ dwie wymiarowości zadania optymalizacji (liczba zmiennych
-    decyzyjnych): 10 oraz 30.
+    <b>TBA 2025-03-18</b>
   </p>
-
 <h3>Zadanie 3.</h3>
   <p>
-    Zaimplementuj algorytm <i>min-max</i> w grze kółko i krzyżyk
-    na planszy 3x3. Program powinien grać sam ze sobą i
-    wizualizować kolejne stany gry na terminalu. Zbadaj wpływ głębokości 
-    przeszukiwania drzewa gry na jakość uzyskanych wyników.
+    <b>TBA 2025-04-01</b>
   </p>
-  <p>
-    Rozważ zastosowanie klas <code>Player</code>, <code>State</code>,
-    <code>Game</code> do reprezentacji -- kolejno -- gracza, stanu gry oraz samej
-    gry.
-  </p>
-  <p>
-    Pamiętaj, że implementacja musi być wykonana samodzielnie.
-    Brak zrozumienia dostarczonego kodu rozwiązania równoważny jest plagiatowi.
-  </p>
-
 <h3>Zadanie 4.</h3>
-<p>
-  Zaimplementuj algorytm SVM oraz zbadaj działanie algorytmu w zastosowaniu do
-  zbioru danych <a href="https://archive.ics.uci.edu/ml/datasets/wine+quality">Wine Quality Data Set</a>.
-
-</p>
-
-<p>
-  W celu dostosowania zbioru danych do problemu klasyfikacji binarnej zdyskretyzuj zmienną objaśnianą. Pamiętaj, aby podzielić zbiór danych na zbiór trenujący oraz uczący.
-</p>
-
-<p>
-  Zbadaj wpływ hiperparametrów na działanie implementowanego algorytmu. W
-  badaniach rozważ dwie różne funkcje jądrowe poznane na wykładzie.
-</p>
-
+  <p>
+    <b>TBA 2025-04-15</b>
+  </p>
 <h3>Zadanie 5.</h3>
-<p>
-Niech dana będzie funkcja \(f ∷ [-10, 10] \rightarrow R\) o następującej postaci:
-$$ f(x) = x^{2} * sin(x) + 100 * sin(x) * cos(x) $$
-Zaimplementuj perceptron wielowarstwowy, który posłuży do aproksymacji funkcji.
-</p>
-
-<p>
-Zbadaj:
-<ul>
-  <li>
-    wpływ liczby neuronów w warstwie na jakość uzyskanej aproksymacji
-  <li>
-    róznice w jakości aproksymacji w zależności od zastosowania metody
-    gradientowej lub metody ewolucyjnej do znajdowania wag sieci.
-</ul>
-Do implementacji zadanego aproksymatora lub solwera optymalizacyjnego możesz
-korzystać z zewnętrznych bibliotek: np. numpy, scipy, scikit-learn.
-</p>
-
+  <p>
+    <b>TBA 2025-05-06</b>
+  </p>
 <h3>Zadanie 6.</h3>
-<p>
-Zaimplementuj algorytm Q-learning. Następnie, wykorzystując środowisko<a
-  href="https://www.gymlibrary.dev/environments/toy_text/taxi/">Taxi,</a>
-zbadaj wpływ hiperparametrów (współczynnik uczenia) oraz poznanych strategii
-eksploracji na działanie algorytmu.
-</p>
-
+  <p>
+    <b>TBA 2025-05-20</b>
+  </p>
 <h3>Zadanie 7.</h3>
-<p>
-Zaimplementuj naiwny klasyfikator Bayesa oraz zbadaj działanie algorytmu w 
-zastosowaniu do zbioru danych <a href="https://archive.ics.uci.edu/ml/datasets/iris">Iris Data Set</a>. Pamiętaj, aby podzielić zbiór danych na 
-zbiór trenujący oraz uczący!
-</p>
-
+  <p>
+    <b>TBA 2025-06-03</b>
+  </p>
 </body>
 </html>
-
