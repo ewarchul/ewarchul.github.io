@@ -163,8 +163,35 @@ pytania dotyczące raportu.
 <h2 id="zadania">Zadania laboratoryjne</h2>
 <h3>Zadanie 1.</h3>
   <p>
-    <b>TBA 2025-03-04</b>
-  </p>
+    Zaimplementuj algorytm gradientu prostego.
+    Następnie zbadaj zbieżność algorytmu, używając następujących funkcji:
+    <ul>
+      <li>funkcji kwadratowej</li>
+      <li><a href="https://www.sfu.ca/~ssurjano/rosen.html">funkcji Rosenbrocka</a></li>
+      <li><a href="https://www.sfu.ca/~ssurjano/ackley.html">funkcji Ackleya</a>.</li>
+    </ul>
+    Jako dziedzinę funkcji celu przyjmij zbiór $$[-10, 10]^{n} \subset \mathbb{R}^{n}, n = 10.$$
+</p>
+<p>
+      Zbadaj wpływ początkowej wartości parametru kroku na zbieżność (wykres par (\(t,
+      q(x_{t})\)), gdzie t to krok/numer iteracji) metody oraz czas jej
+      działania. W swoich badaniach rozważ następujące wartości początkowe parametru
+      \(\alpha \in \{1, 10, 100\}\).
+</p>
+<p> 
+      Do wyliczenia gradientu funkcji możesz skorzystać z pakietu
+      <code>autograd</code>. Pamiętaj, że implementacja solwera powinna być w
+      stanie zoptymalizowac każdą zadaną funkcję celu oraz posiadac co najmniej dwa warunki stopu.
+      Sugerowana sygnatura funkcji:
+      <pre><code>
+       def solver(
+         eval_func: Callable[[Sequence[float]], float],
+         x0: Sequence[float],
+         params: SolverParameters,
+         ...
+       ) -> SolverResult:
+      </pre></code>
+</p>
 <h3>Zadanie 2.</h3>
   <p>
     <b>TBA 2025-03-18</b>
